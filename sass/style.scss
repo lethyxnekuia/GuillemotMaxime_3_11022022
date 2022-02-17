@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+header,main{
+    max-width: 700px;
+    margin: auto;
+    font-family: Roboto;
+}
+
+header img{
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+.intro{
+    margin: auto;
+    width: 80%;
+    form {
+        padding: 10px;
+        background-color: rgb(151, 151, 151);
+        input{
+            background-color: rgb(151, 151, 151);
+            border: none;
+            color: rgb(0, 0, 0);
+        }
+    }
+
+}
+
+

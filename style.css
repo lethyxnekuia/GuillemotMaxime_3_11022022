@@ -1,3 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+header, main {
+  max-width: 700px;
+  margin: auto;
+  font-family: Roboto;
+}
 
+header img {
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+.intro {
+  margin: auto;
+  width: 80%;
+}
+.intro form {
+  padding: 10px;
+  background-color: #979797;
+}
+.intro form input {
+  background-color: #979797;
+  border: none;
+  color: black;
+}
 
 /*# sourceMappingURL=style.css.map */
