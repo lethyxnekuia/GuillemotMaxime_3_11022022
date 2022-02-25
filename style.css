@@ -1,8 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-header, main {
-  max-width: 700px;
-  margin: auto;
+.purple_button {
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  border-radius: 20px;
+  border: none;
+  padding: 15px;
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.menu_heart_1 {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  font-size: 20px;
+  color: black;
+}
+.menu_heart_1:hover {
+  display: none;
+}
+
+.menu_heart_2 {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  font-size: 20px;
+  color: black;
+  display: none;
+}
+.menu_heart_2:hover {
+  display: inherit;
+  color: #9356DC;
+}
+
+body {
   font-family: Roboto;
+}
+
+header, main {
+  max-width: 1440px;
+  margin: auto;
 }
 
 header img {
@@ -13,18 +51,194 @@ header img {
   width: 200px;
 }
 
+footer {
+  background-color: #353535;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+footer article {
+  max-width: 1440px;
+  margin: auto;
+}
+footer article img {
+  -webkit-filter: invert(100%);
+  width: 100px;
+  margin-left: 20px;
+}
+footer article ul {
+  padding: 0px;
+  margin: 0px;
+  margin-left: 20px;
+  list-style-type: none;
+}
+footer article ul li {
+  padding-top: 10px;
+}
+footer article ul li a {
+  text-decoration: none;
+  color: #e2e2e2;
+}
+footer article ul li a .footer_logo_1 {
+  margin-right: 10px;
+  font-size: 12px;
+}
+footer article ul li a .footer_logo_2 {
+  margin-right: 10px;
+  font-size: 9px;
+}
+
 .intro {
   margin: auto;
-  width: 80%;
+  width: 100%;
+  background-color: #f8f8f8;
+  text-align: center;
+  padding-bottom: 20px;
 }
 .intro form {
-  padding: 10px;
-  background-color: #979797;
+  background-color: #e4e4e4;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.intro form i {
+  width: 60px;
 }
 .intro form input {
-  background-color: #979797;
+  background-color: #e4e4e4;
   border: none;
   color: black;
+}
+.intro h1 {
+  margin: 40px;
+  margin-bottom: 0px;
+  font-size: 25px;
+}
+.intro p {
+  margin: 20px;
+  margin-top: 10px;
+  color: #505050;
+}
+
+h2 {
+  width: 90%;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.step_list {
+  list-style-type: none;
+  list-style: none;
+  padding-left: 0px;
+}
+.step_list .step {
+  width: 90%;
+  margin: auto;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  margin-top: 15px;
+}
+.step_list .step .step_button {
+  position: relative;
+  padding-left: 0px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: none;
+  border: none;
+  text-align: left;
+  padding: 20px;
+  font-weight: 900;
+}
+.step_list .step .step_button .circle {
+  position: absolute;
+  left: -7px;
+  width: 20px;
+  height: 20px;
+  background-color: #9356DC;
+  border-radius: 20px;
+  margin: auto;
+}
+.step_list .step .step_button .circle .number {
+  color: white;
+  margin-top: 4px;
+  margin-left: 6px;
+  font-size: 12px;
+}
+.step_list .step .step_button .step_logo {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.step_list .step .step_button:hover {
+  background-color: #9256dc2a;
+}
+.step_list .step .step_button:hover .step_logo {
+  color: #9356DC;
+}
+
+.menu_list {
+  margin-top: 60px;
+  background-color: #f8f8f8;
+  width: 100%;
+  padding-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu_list article {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.082);
+  position: relative;
+}
+.menu_list article a {
+  text-decoration: none;
+}
+.menu_list article a .new {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  background-color: #99E2D0;
+  color: #239276;
+  padding: 5px;
+  border-radius: 2px;
+}
+.menu_list article a img {
+  object-fit: cover;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  width: 100%;
+  height: 150px;
+  position: absolute;
+}
+.menu_list article a .menu_info {
+  color: black;
+  margin-left: 20px;
+  position: relative;
+  margin-top: 170px;
+  padding-bottom: 15px;
+}
+.menu_list article a .menu_info h3, .menu_list article a .menu_info p {
+  margin: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu_list article {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .step_list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .step_list .step {
+    width: 30%;
+  }
+
+  .menu_list article {
+    width: 22.5%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

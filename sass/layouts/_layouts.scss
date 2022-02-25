@@ -1,0 +1,44 @@
+header img{
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+
+footer{
+    background-color: #353535;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    article{
+        max-width: 1440px;
+        margin: auto;
+        img{
+            -webkit-filter: invert(100%);
+            width: 100px;
+            margin-left: 20px;
+        }
+        ul{
+            padding:0px;
+            margin:0px;
+            margin-left: 20px;
+            list-style-type: none;
+            li{
+                padding-top: 10px;
+                a{
+                    text-decoration:none;
+                    color: rgb(226, 226, 226);
+                    .footer_logo_1{
+                        margin-right: 10px;
+                        font-size: 12px;
+                    }
+                    .footer_logo_2{
+                        margin-right: 10px;
+                        font-size: 9px;
+                    }
+                }
+            }
+        }
+    }
+}

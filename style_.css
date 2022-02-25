@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
+.purple_button {
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  border-radius: 20px;
+  border: none;
+  padding: 15px;
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.menu_heart_1 {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  font-size: 20px;
+  color: black;
+}
+.menu_heart_1:hover {
+  display: none;
+}
+
+.menu_heart_2 {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  font-size: 20px;
+  color: black;
+  display: none;
+}
+.menu_heart_2:hover {
+  display: inherit;
+  color: #9356DC;
+}
+
+body {
+  font-family: Roboto;
+}
+
+header, main {
+  max-width: 1440px;
+  margin: auto;
+}
+
+header img {
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+footer {
+  background-color: #353535;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+footer article {
+  max-width: 1440px;
+  margin: auto;
+}
+footer article img {
+  -webkit-filter: invert(100%);
+  width: 100px;
+  margin-left: 20px;
+}
+footer article ul {
+  padding: 0px;
+  margin: 0px;
+  margin-left: 20px;
+  list-style-type: none;
+}
+footer article ul li {
+  padding-top: 10px;
+}
+footer article ul li a {
+  text-decoration: none;
+  color: #e2e2e2;
+}
+footer article ul li a .footer_logo_1 {
+  margin-right: 10px;
+  font-size: 12px;
+}
+footer article ul li a .footer_logo_2 {
+  margin-right: 10px;
+  font-size: 9px;
+}
+
+.back {
+  position: absolute;
+  font-size: 25px;
+  color: black;
+  top: 25px;
+  left: 15px;
+}
+
+.menu_img {
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
+}
+
+section {
+  position: relative;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: #f8f8f8;
+  margin-top: -60px;
+  padding-top: 10px;
+}
+section .menu_title {
+  position: relative;
+  background-color: #f8f8f8;
+}
+section .menu_title h1 {
+  font-family: "Shrikhand", cursive;
+}
+section article {
+  margin: 15px;
+  margin-top: 40px;
+}
+section article h2 {
+  font-weight: 100;
+  width: 50px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #99E2D0;
+}
+section article .dish {
+  position: relative;
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 15px;
+}
+section article .dish h3 {
+  margin: 0px;
+}
+section article .dish p {
+  margin: 0px;
+  margin-top: 5px;
+}
+section article .dish .price {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  font-weight: 700;
+}
+section .center {
+  margin-top: 40px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style_.css.map */

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap');
+
+.back{
+    position: absolute;
+    font-size: 25px;
+    color: black;
+    top:25px;
+    left: 15px;
+}
+.menu_img{
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+}
+
+section{
+    position: relative;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: $grey;
+    margin-top: -60px;
+    padding-top: 10px;
+    .menu_title{
+        position: relative;
+        background-color: $grey;
+        h1{
+            font-family: 'Shrikhand', cursive;
+        }
+    }
+    article{
+        margin: 15px;
+        margin-top: 40px;
+        h2{
+            font-weight: 100;
+            width: 50px;
+            padding-bottom: 5px;
+            border-bottom: 3px solid #99E2D0;
+        }
+        .dish{
+            position: relative;
+            background-color: white;
+            border-radius: 15px;
+            padding: 10px;
+            margin-top: 15px;
+            h3{
+                margin: 0px;
+            }
+            p{
+                margin: 0px;
+                margin-top: 5px;
+            }
+            .price{
+                position: absolute;
+                right: 15px;
+                bottom: 15px;
+                font-weight: 700;
+            }
+        }
+    }
+    .center{
+        margin-top: 40px;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+}

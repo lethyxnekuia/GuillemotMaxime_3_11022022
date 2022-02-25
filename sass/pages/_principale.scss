@@ -1,0 +1,164 @@
+.intro{
+    margin: auto;
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+    text-align: center;
+    padding-bottom: 20px;
+    form {
+        background-color: rgb(228, 228, 228);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        i{
+            width: 60px;
+        }
+        input{
+            background-color: rgb(228, 228, 228);
+            border: none;
+            color: rgb(0, 0, 0);
+        }
+    }
+    h1 {
+        margin: 40px;
+        margin-bottom: 0px;
+        font-size: 25px;
+    }
+    p {
+        margin: 20px;
+        margin-top: 10px;
+        color: #505050;
+    }
+
+}
+
+
+h2{
+    width: 90%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.step_list{
+    list-style-type: none;
+    list-style: none;
+    padding-left: 0px;
+    .step{
+        width: 90%;
+        margin: auto;
+        background-color: rgb(248, 248, 248);
+        border-radius: 20px;
+        margin-top: 15px;
+        .step_button {
+            position: relative;
+            padding-left: 0px;
+            width: 100%;
+            border-radius: 20px;
+            background-color: none;
+            border: none;
+            text-align: left;
+            padding: 20px;
+            font-weight: 900;
+            .circle{
+                position: absolute;
+                left: -7px;
+                width: 20px;
+                height: 20px;
+                background-color: $purple;
+                border-radius: 20px;
+                margin: auto;
+                .number{
+                    color: white;
+                    margin-top: 4px;
+                    margin-left: 6px;
+                    font-size: 12px;
+                }
+            }
+            .step_logo{
+                margin-right: 20px;
+                margin-left: 20px;
+                
+            }
+            &:hover{
+                background-color: #9256dc2a;
+                .step_logo{
+                    color: $purple;
+                }
+            }
+        }
+    }
+    
+}
+
+.menu_list{
+    margin-top: 60px;
+    background-color: $grey;
+    width: 100%;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    article{
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.082);
+        position: relative;
+        a{
+            text-decoration:none;
+            .new{
+                position: absolute;
+                top: 0px;
+                right: 15px;
+                background-color: $green;
+                color: #239276;                ;
+                padding: 5px;
+                border-radius: 2px;
+            }
+            img{
+                object-fit: cover;
+                border-top-right-radius: 20px;
+                border-top-left-radius: 20px;
+                width: 100%;
+                height: 150px;
+                position: absolute;
+            }
+            .menu_info{
+                color: black;
+                margin-left: 20px;
+                position: relative;
+                margin-top: 170px;
+                padding-bottom: 15px;
+                h3, p{
+                    margin: 5px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px){
+
+
+    .menu_list{
+        article{
+            width: 45%;
+        }
+    }
+}
+
+@media screen and (min-width: 1025px){
+    .step_list{
+        display: flex;
+        flex-wrap: wrap;
+        .step{
+            width: 30%;
+        }
+    }
+    .menu_list{
+        article{
+            width: 22.5%;
+        }
+    }
+}
