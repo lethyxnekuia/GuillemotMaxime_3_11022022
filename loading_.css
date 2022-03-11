@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+
+img {
+  display: flex;
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  animation: img 1s infinite ease-out;
+  width: 40%;
+}
+@keyframes img {
+  0% {
+    opacity: 0;
+    height: 20px;
+  }
+  50% {
+    opacity: 1;
+    height: 40px;
+  }
+  100% {
+    opacity: 0;
+    height: 60px;
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  animation: logo 1s infinite ease-out;
+  font-size: 50px;
+  transform: translate(-50%, -50%);
+}
+@keyframes logo {
+  0% {
+    opacity: 0;
+    transform: rotate(180deg);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=loading_.css.map */

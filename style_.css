@@ -17,6 +17,7 @@
 }
 .purple_button:hover {
   filter: brightness(120%);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.459);
 }
 .purple_button:active {
   filter: brightness(180%);

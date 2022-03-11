@@ -1,3 +1,4 @@
+
 .purple_button{
     text-decoration:none;
     display: inline-block;
@@ -13,7 +14,8 @@
     transition: all ease 0.5s;
     cursor: pointer;
     &:hover{
-        filter : brightness(120%)
+        filter : brightness(120%);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.459);
     }
     &:active{
         filter : brightness(180%);
@@ -42,3 +44,4 @@
 
     }
 }
+
