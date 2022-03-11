@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 .purple_button {
+  text-decoration: none;
+  display: inline-block;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   border-radius: 20px;
   border: none;
@@ -8,6 +10,16 @@
   font-size: 15px;
   margin-top: 10px;
   margin-bottom: 30px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.082);
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+.purple_button:hover {
+  filter: brightness(120%);
+}
+.purple_button:active {
+  filter: brightness(180%);
+  transform: translateY(5px);
 }
 
 .menu_heart_1 {
@@ -17,21 +29,19 @@
   font-size: 20px;
   color: black;
 }
-.menu_heart_1:hover {
-  display: none;
-}
 
 .menu_heart_2 {
   position: absolute;
   right: 30px;
   top: 10px;
   font-size: 20px;
-  color: black;
-  display: none;
+  opacity: 0;
+  color: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
 .menu_heart_2:hover {
-  display: inherit;
+  opacity: 1;
   color: #9356DC;
+  transition: all ease 0.5s;
 }
 
 body {
@@ -137,6 +147,7 @@ h2 {
   margin-top: 15px;
 }
 .step_list .step .step_button {
+  display: inline-block;
   position: relative;
   padding-left: 0px;
   width: 100%;
@@ -144,8 +155,10 @@ h2 {
   background-color: none;
   border: none;
   text-align: left;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-weight: 900;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.082);
 }
 .step_list .step .step_button .circle {
   position: absolute;
@@ -163,8 +176,8 @@ h2 {
   font-size: 12px;
 }
 .step_list .step .step_button .step_logo {
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 .step_list .step .step_button:hover {
   background-color: #9256dc2a;

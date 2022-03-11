@@ -1,4 +1,6 @@
 .purple_button{
+    text-decoration:none;
+    display: inline-block;
     background: linear-gradient(to bottom right, $pink, $purple);
     border-radius: 20px;
     border : none;
@@ -7,6 +9,16 @@
     font-size: 15px;
     margin-top: 10px;
     margin-bottom: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.082);
+    transition: all ease 0.5s;
+    cursor: pointer;
+    &:hover{
+        filter : brightness(120%)
+    }
+    &:active{
+        filter : brightness(180%);
+        transform: translateY(5px);
+    }
 }
 
 .menu_heart_1{
@@ -15,19 +27,18 @@
     top: 10px;
     font-size: 20px;
     color: black;
-    &:hover{
-        display: none;
-    }
 }
 .menu_heart_2{
     position: absolute;
     right: 30px;
     top: 10px;
     font-size: 20px;
-    color: black;
-    display: none;
+    opacity: 0;
+    color: linear-gradient(to bottom right, $pink, $purple);
     &:hover{
-        display:inherit;
+        opacity:1;
         color: $purple;
+        transition: all ease 0.5s;
+
     }
 }

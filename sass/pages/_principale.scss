@@ -48,6 +48,7 @@ h2{
         border-radius: 20px;
         margin-top: 15px;
         .step_button {
+            display: inline-block;
             position: relative;
             padding-left: 0px;
             width: 100%;
@@ -55,8 +56,10 @@ h2{
             background-color: none;
             border: none;
             text-align: left;
-            padding: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
             font-weight: 900;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.082);
             .circle{
                 position: absolute;
                 left: -7px;
@@ -73,8 +76,8 @@ h2{
                 }
             }
             .step_logo{
-                margin-right: 20px;
-                margin-left: 20px;
+                margin-right: 10%;
+                margin-left: 10%;
                 
             }
             &:hover{
