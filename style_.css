@@ -118,6 +118,7 @@ section {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   background-color: #f8f8f8;
+  margin: auto;
   margin-top: -60px;
   padding-top: 10px;
 }
@@ -127,6 +128,15 @@ section .menu_title {
 }
 section .menu_title h1 {
   font-family: "Shrikhand", cursive;
+  width: 70%;
+}
+section .menu_heart_1 {
+  right: 20px;
+  font-size: 25px;
+}
+section .menu_heart_2 {
+  right: 20px;
+  font-size: 25px;
 }
 section article {
   margin: 15px;
@@ -164,6 +174,7 @@ section article .dish h3 {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  width: 80%;
 }
 section article .dish p {
   display: block;
@@ -172,6 +183,7 @@ section article .dish p {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  width: 80%;
 }
 section article .dish .price {
   position: absolute;
@@ -234,6 +246,11 @@ section .center {
   to {
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+@media screen and (min-width: 1025px) {
+  section {
+    width: 70%;
   }
 }
 

@@ -98,6 +98,81 @@ footer article ul li a .footer_logo_2 {
   font-size: 9px;
 }
 
+.loader {
+  opacity: 0;
+  animation: loader 3s;
+}
+@keyframes loader {
+  0% {
+    display: inherit;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f8f8f8;
+    top: 0;
+    overflow: hidden;
+    z-index: 99;
+    opacity: 1;
+  }
+  90% {
+    display: inherit;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f8f8f8;
+    top: 0;
+    overflow: hidden;
+    z-index: 99;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.loader img {
+  display: flex;
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  animation: img 1s infinite ease-out;
+  width: 40%;
+}
+@keyframes img {
+  0% {
+    opacity: 0;
+    height: 20px;
+  }
+  50% {
+    opacity: 1;
+    height: 40px;
+  }
+  100% {
+    opacity: 0;
+    height: 60px;
+  }
+}
+.loader .logo {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  animation: logo 1s infinite ease-out;
+  font-size: 50px;
+  transform: translate(-50%, -50%);
+}
+@keyframes logo {
+  0% {
+    opacity: 0;
+    transform: rotate(180deg);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .intro {
   margin: auto;
   width: 100%;
@@ -210,7 +285,7 @@ h2 {
 }
 .menu_list article a .new {
   position: absolute;
-  top: 0px;
+  top: 15px;
   right: 15px;
   background-color: #99E2D0;
   color: #239276;
@@ -234,6 +309,9 @@ h2 {
 }
 .menu_list article a .menu_info h3, .menu_list article a .menu_info p {
   margin: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 70%;
 }
 
 @media screen and (min-width: 768px) {

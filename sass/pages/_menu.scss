@@ -18,6 +18,7 @@ section{
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     background-color: $grey;
+    margin: auto;
     margin-top: -60px;
     padding-top: 10px;
     .menu_title{
@@ -25,8 +26,18 @@ section{
         background-color: $grey;
         h1{
             font-family: 'Shrikhand', cursive;
+            width: 70%;
         }
     }
+    .menu_heart_1{
+        right: 20px;
+        font-size: 25px;
+    }
+    .menu_heart_2{
+        right: 20px;
+        font-size: 25px;
+    }
+    
     article{
         margin: 15px;
         margin-top: 40px;
@@ -54,6 +65,7 @@ section{
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 overflow: hidden;
+                width: 80%;
             }
             p{
                 display: block;
@@ -62,6 +74,7 @@ section{
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 overflow: hidden;
+                width: 80%;
             }
             .price{
                 position: absolute;
@@ -130,5 +143,11 @@ section{
     to {
         opacity: 1;
         transform: translateY(0px);
+    }
+}
+
+@media screen and (min-width: 1025px){
+    section{
+        width: 70%;
     }
 }
