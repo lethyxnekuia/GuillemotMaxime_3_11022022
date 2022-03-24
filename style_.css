@@ -38,7 +38,7 @@
   top: 10px;
   font-size: 20px;
   opacity: 0;
-  color: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: #9356DC;
 }
 .menu_heart_2:hover {
   opacity: 1;
@@ -174,7 +174,7 @@ section article .dish h3 {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  width: 80%;
+  margin-right: 20px;
 }
 section article .dish p {
   display: block;
@@ -183,7 +183,7 @@ section article .dish p {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  width: 80%;
+  margin-right: 40px;
 }
 section article .dish .price {
   position: absolute;
